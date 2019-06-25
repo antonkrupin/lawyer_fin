@@ -1,0 +1,28 @@
+{% load static %}
+<div class="nav__links-mobile">
+          <h3 class="menu_close_btn">x</h3>
+          <a href="{% url 'index' %}">О себе</a><br>
+          <a href="{% url 'services' %}">Услуги</a><br>
+          <a href="#">Контакты</a><br>
+          <a href="{% url 'certificates' %}">Дипломы и сертификаты</a><br>
+  </div>
+  <div class="header">
+      <div class="header__logo">
+          <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt=""></a>
+      </div>
+      <div class="header__nav">
+          <div class="menu_icon">
+              <img src="{% static 'img/menu_icon.png' %}" alt="">
+          </div>
+          <ul class="nav__links">
+                  <a href="{% url 'index' %}">О себе</a>
+                  <a href="{% url 'services' %}">Услуги</a>
+                  <a href="#">Контакты</a>
+                  <a href="{% url 'certificates' %}">Дипломы и сертификаты</a>
+          </ul>
+      </div>
+      <div class="header__contacts">
+          <h3>shishkov@zakon-zp.ru</h3>
+          <h4>+7 953 525 1626</h4>
+      </div>
+  </div>

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h2 class="practice_title">Примеры из практики</h2>
+    {% if articles %}
+      {% for article in articles %}
+      <div class="practice_examples">
+          <div class="practice_example">
+                  <h3 class="practice_examples__title">{{ article.title }}</h3>
+                  <a href="https://google.ru" target="_blank"><img src="{% static 'img/services/practice_bg.jpg' %}" alt=""></a>
+          </div>
+          <!--<div class="practice_example">
+                  <h3 class="practice_examples__title">{{ article.title }}</h3>
+                  <a href="https://google.ru" target="_blank"><img src="{% static 'img/services/practice_bg.jpg' %}" alt=""></a>
+          </div>-->
+      </div>
+      {% endfor %}
+    {% else %}
+      <div class="col-md-12">
+        <p>Нет статей</p>
+      </div>
+    {% endif %}
+{% endblock %}

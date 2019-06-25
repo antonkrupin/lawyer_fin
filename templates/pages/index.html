@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section>
+        <img class="big_photo" src="{% static 'img/about/photo.jpg' %}" alt="">
+        <img class="small_photo" src="{% static 'img/about/photo_small.jpg' %}" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+                    <h1 class="name">Шишков<br>
+                    Александр</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+                    <h2 class="title">юридические услуги</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-8">
+                    <h3 class="subtitle">Решение юридических проблем<br class="small_br"> в гражданских,<br>
+                        арбитражных и уголовных<br class="small_br"> процессах.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                    <button class="aboutbtn">Связаться в VK</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="separator">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>О себе</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="biography">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-2 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                            <img src="{% static 'img/checkbox.png' %}" alt="">
+                        </div>
+                        <div class="col-10 col-sm-11 col-md-11 col-lg-11 col-xl-11">
+                                <h3>Адвокат Адвокатской палаты Республики Карелия Коллегии адвокатов «Закатов и Партнеры»,
+                                номер в реестре адвокатов – 10/366</h3>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-2 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                            <img src="{% static 'img/checkbox.png' %}" alt="">
+                        </div>
+                        <div class="col-10 col-sm-11 col-md-11 col-lg-11 col-xl-11">
+                                <h3>Юридический стаж – 10 лет</h3>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-2 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                            <img src="{% static 'img/checkbox.png' %}" alt="">
+                        </div>
+                        <div class="col-10 col-sm-11 col-md-11 col-lg-11 col-xl-11">
+                                <h3>Член Комиссии Совета Адвокатской палаты Республики Карелия по защите профессиональных прав адвокатов</h3>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-2 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                            <img src="{% static 'img/checkbox.png' %}" alt="">
+                        </div>
+                        <div class="col-10 col-sm-11 col-md-11 col-lg-11 col-xl-11">
+                                <h3>Член профессиональной республиканской общественной организации "Союз юристов Республики Карелия"</h3>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-2 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                            <img src="{% static 'img/checkbox.png' %}" alt="">
+                        </div>
+                        <div class="col-10 col-sm-11 col-md-11 col-lg-11 col-xl-11">
+                                <h3>Член профессиональной республиканской общественной организации "Союз юристов Республики Карелия"
+                                и общероссийской общественной организации «Ассоциация юристов России»</h3>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-2 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                            <img src="{% static 'img/checkbox.png' %}" alt="">
+                        </div>
+                        <div class="col-10 col-sm-11 col-md-11 col-lg-11 col-xl-11">
+                                <h3>Награжден почетной грамотой Адвокатской палаты Республики Карелия за добросовестный труд
+                                    и успехи в деле защиты прав и свобод граждан</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="certificates">
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <h1 class="page_title">Дипломы и сертификаты</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="diplom_big">
+    <div class="diplom_big__img">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                        <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% if certificates %}
+<div class="container">
+  <div class="row">
+      <div class="col-12">
+        <div class="row">
+  {% for certificate in certificates %}
+          <div class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2">
+            <img class="diplom" src="{{ certificate.photo.url }}" alt="">
+          </div>
+  {% endfor %}
+      </div>
+      <div class="row">
+          <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+              <button class="aboutbtn">Связаться в VK</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% else %}
+
+{% endif %}
+</div>
+{% endblock %}

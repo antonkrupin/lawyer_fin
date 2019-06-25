@@ -1,0 +1,228 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="services">
+      <img class="big_photo" src="{% static 'img/services/photo.jpg' %}" alt="">
+      <img class="small_photo" src="{% static 'img/services/photo_small.jpg' %}" alt="">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                          <h1 class="page_title">Как я могу вам помочь?</h1>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                          <h2 class="page_subtitle">Оказываю юридическую помощь в городе Петрозаводске<br> и Республике Карелия, а также помогаю доверителям<br> в городе Санкт-Петербурге и Москве.</h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <div class="row">
+                      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                          <img class="checkbox" src="{% static 'img/checkbox.png' %}" alt="">
+                      </div>
+                      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                          <h3 class="page_bullets">Адвокат по уголовным делам</h3>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                          <img  class="checkbox" src="{% static 'img/checkbox.png' %}" alt="">
+                      </div>
+                      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                          <h3 class="page_bullets">Адвокат по семейным и наследственным спорам</h3>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                          <img  class="checkbox" src="{% static 'img/checkbox.png' %}" alt="">
+                      </div>
+                      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                          <h3 class="page_bullets">Адвокат по жилищным и земельным спорам</h3>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                          <img  class="checkbox" src="{% static 'img/checkbox.png' %}" alt="">
+                      </div>
+                      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                          <h3 class="page_bullets">Адвокат по делам о ДТП</h3>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                          <img  class="checkbox" src="{% static 'img/checkbox.png' %}" alt="">
+                      </div>
+                      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                          <h3 class="page_bullets">Защита прав потребителей</h3>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                          <img  class="checkbox" src="{% static 'img/checkbox.png' %}" alt="">
+                      </div>
+                      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                          <h3 class="page_bullets">Представление интересов<br class="small_br"> в Арбитражном суде</h3>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                          <img  class="checkbox" src="{% static 'img/checkbox.png' %}" alt="">
+                      </div>
+                      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                          <h3 class="page_bullets">Корпоративный адвокат</h3>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                          <img  class="checkbox" src="{% static 'img/checkbox.png' %}" alt="">
+                      </div>
+                      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                          <h3 class="page_bullets">Абонентское обслуживание</h3>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                          <button class="aboutbtn">Связаться в VK</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <div class="services_slider">
+      <div class="service">
+              <h2 class="services_title">Уголовные дела</h2>
+      </div>
+      <div class="service">
+              <h2 class="services_title active_services">Гражданские дела</h2>
+      </div>
+      <div class="service">
+              <h2 class="services_title">Арбитражные дела и сопровождение бизнеса</h2>
+      </div>
+  </div>
+  <div class="services_about">
+      <div class="civil_affairs">
+          <h2>Гражданские дела</h2>
+          <ul>
+              <li>
+                  <h3>Представление интересов по семейным спорам, связанным с расторжением брака,
+                          разделом имущества супругов, алиментными обязательствами.</h3>
+              </li>
+              <li>
+                  <h3>Взыскание ущерба, компенсации морального вреда.</h3>
+              </li>
+              <li>
+                  <h3>Страховые споры.</h3>
+              </li>
+              <li>
+                  <h3>Жилищные и наследственные споры.</h3>
+              </li>
+              <li>
+                  <h3>Трудовые споры. Защита прав потребителей.</h3>
+              </li>
+              <li>
+                  <h3>Медицинские споры.</h3>
+              </li>
+              <li>
+                  <h3>Административное право.</h3>
+              </li>
+          </ul>
+      </div>
+      <div class="criminal_proceedings">
+          <h2>Уголовные дела</h2>
+          <ul>
+              <li>
+                  <h3>Защита в ходе доследственной проверки.</h3>
+              </li>
+              <li>
+                  <h3>Защита подозреваемых и обвиняемых на стадии
+                          предварительного следствия и дознания.</h3>
+              </li>
+              <li>
+                  <h3>Защита в суде.</h3>
+              </li>
+              <li>
+                  <h3>Представление интересов потерпевших и свидетелей по уголовному делу.</h3>
+              </li>
+          </ul>
+      </div>
+      <div class="administrative_matters">
+          <h2>Административные дела</h2>
+          <ul>
+              <li>
+                  <h3>Претензионная работа.</h3>
+              </li>
+              <li>
+                  <h3>Представление интересов в арбитражных судах.</h3>
+              </li>
+              <li>
+                  <h3>Споры с контрагентами.</h3>
+              </li>
+              <li>
+                  <h3>Оспаривание действий органов власти.</h3>
+              </li>
+              <li>
+                  <h3>Услуги корпоративного адвоката.</h3>
+              </li>
+              <li>
+                  <h3>Юридическое сопровождение сделок.</h3>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <h2 class="practice_title">Примеры из практики</h2>
+  <div class="practice_examples">
+      {% if articles.has_other_pages%}
+        <ul class="pagination">
+        {% if articles.has_previous %}
+            <li class="page-item">
+                <a href="?page={{articles.previous_page_number}}" class="page-link">&laquo;</a>
+            </li>
+        {% else %}
+          <li class="page-item disabled">
+            <a class="page-link">&laquo;</a>
+          </li>
+        {% endif %}
+        {% for i in articles.paginator.page_range %}
+          {% if articles.number == i %}
+            <li class="page-item active">
+              <a class="page-link">{{i}}</a>
+            </li>
+            {% else %}
+            <li class="page-item">
+              <a href="?page={{i}}" class="page-link">{{i}}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+        {% if articles.has_next %}
+            <li class="page-item">
+                <a href="?page={{articles.next_page_number}}" class="page-link">&raquo;</a>
+            </li>
+        {% else %}
+          <li class="page-item disabled">
+            <a class="page-link">&raquo;</a>
+          </li>
+        {% endif %}
+        </ul>
+      {% endif %}
+      <!---->
+      {% if articles %}
+        {% for article in articles %}
+        <div class="practice_example">
+                <h3 class="practice_examples__title">{{ article.title }}</h3>
+                <a href="https://google.ru" target="_blank"><img src="{% static 'img/services/practice_bg.jpg' %}" alt=""></a>
+        </div>
+        {% endfor %}
+      {% else %}
+
+      {% endif %}
+  </div>
+{% endblock %}
