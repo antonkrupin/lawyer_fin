@@ -1,1 +1,46 @@
-<h1>This is an article</h1>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="article">
+        <div class="article_title">
+            <h2>{{ article.title }}</h2>
+        </div>
+        <div class="article_text">
+                <h3>
+                {{ article.content }}
+                </h3>
+        </div>
+        <div class="article_img__big">
+            <div class="article_big__img">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="article_img">
+           {% if article.photo1 %}
+               <img src="{{ article.photo1.url }}" alt="">
+           {% endif %}
+           {% if article.photo2 %}
+               <img src="{{ article.photo2.url }}" alt="">
+           {% endif %}
+           {% if article.photo3 %}
+               <img src="{{ article.photo3.url }}" alt="">
+           {% endif %}
+           {% if article.photo4 %}
+               <img src="{{ article.photo4.url }}" alt="">
+           {% endif %}
+           {% if article.photo5 %}
+               <img src="{{ article.photo5.url }}" alt="">
+           {% endif %}
+           {% if article.photo6 %}
+               <img src="{{ article.photo6.url }}" alt="">
+           {% endif %}
+       </div>
+    </section>
+{% endblock %}

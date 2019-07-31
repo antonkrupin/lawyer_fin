@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<section class="contacts_page">
+      <img class="big_photo" src="{% static 'img/contacts/photo.jpg' %}" alt="">
+      <img class="small_photo" src="{% static 'img/contacts/photo_small.jpg' %}" alt="">
+      <img class="phone_icon" src="{% static 'img/contacts/email.jpg' %}" alt="">
+      <img class="email_icon" src="{% static 'img/contacts/phone.jpg' %}" alt="">
+      <img class="point_icon" src="{% static 'img/contacts/point.jpg' %}" alt="">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                          <h1 class="page_title">Как со мной связаться</h1>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                          <h2 class="page_subtitle">Консультация по телефонам:<br>
+                                  +7 953 525 1626<br>
+                                  +7 911 405 2105<br></h2>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                          <h2 class="page_subtitle">Документы по вашему делу <br class="small_br">можно отправить на e-mail:<br>
+                                  shishkov@zakon-zp.ru</h2>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                          <h2 class="page_subtitle">В рабочие часы можно получить<br class="small_br"> консультацию по адресу:<br>
+                                  г. Петрозаводск, ул. Свердлова,<br class="small_br"> д.26, 2-й этаж, офис №3
+                                  </h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <div class="row">
+                      <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                          <button class="aboutbtn">Связаться в VK</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <div class="separator big">
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <h2>Расположение моего офиса в г. Петрозаводске</h2>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acba7a80b5cd16c7bc50789c59c2c23cf2aa469c24f7fe19efa9db3094811f4f0&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=false"></script>
+  </div>
+{% endblock %}

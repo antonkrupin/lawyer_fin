@@ -12,24 +12,18 @@ def about(request):
     return render(request, 'pages/about.html')
 
 def services(request):
-    #articles = Article.objects.order_by('-article_date').filter(is_published=True)[:3]
-    #context = {
-        #'articles': articles
-    #}
-    articles = Article.objects.all()
-
-    paginator = Paginator(articles, 6)
-    page = request.GET.get('page')
-    paged_articles = paginator.get_page(page)
-
-
+    articles = Article.objects.order_by('-article_date').filter(is_published=True)
     context = {
-        'articles': paged_articles
+        'articles': articles
     }
+
     return render(request, 'pages/services.html', context)
 
+def contacts(request):
+    return render(request, 'pages/contacts.html')
+
 def certificates(request):
-    certificates = Diplom.objects.order_by('id')
+    certificates = Diplom.objects.order_by('-id')
     context = {
         'certificates': certificates
     }

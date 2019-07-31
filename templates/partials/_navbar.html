@@ -3,7 +3,7 @@
           <h3 class="menu_close_btn">x</h3>
           <a href="{% url 'index' %}">О себе</a><br>
           <a href="{% url 'services' %}">Услуги</a><br>
-          <a href="#">Контакты</a><br>
+          <a href="{% url 'contacts' %}">Контакты</a><br>
           <a href="{% url 'certificates' %}">Дипломы и сертификаты</a><br>
   </div>
   <div class="header">
@@ -17,7 +17,7 @@
           <ul class="nav__links">
                   <a href="{% url 'index' %}">О себе</a>
                   <a href="{% url 'services' %}">Услуги</a>
-                  <a href="#">Контакты</a>
+                  <a href="{% url 'contacts' %}">Контакты</a>
                   <a href="{% url 'certificates' %}">Дипломы и сертификаты</a>
           </ul>
       </div>
